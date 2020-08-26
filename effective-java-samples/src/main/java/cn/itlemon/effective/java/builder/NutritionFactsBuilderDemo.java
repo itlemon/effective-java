@@ -9,9 +9,9 @@ import cn.itlemon.effective.java.builder.NutritionFacts.Builder;
  * @author jiangpingping
  * Created on 2020-08-25
  */
-public class BuilderDemo {
+public class NutritionFactsBuilderDemo {
 
-    private static final Logger logger = LoggerFactory.getLogger(BuilderDemo.class);
+    private static final Logger logger = LoggerFactory.getLogger(NutritionFactsBuilderDemo.class);
 
     public static void main(String[] args) {
         NutritionFacts build = new Builder(10, 20)
