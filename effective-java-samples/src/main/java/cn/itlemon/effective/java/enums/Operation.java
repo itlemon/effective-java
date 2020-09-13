@@ -1,42 +1,20 @@
 package cn.itlemon.effective.java.enums;
 
+
 /**
  * @author jiangpingping
  * Created on 2020-09-13
  */
-public enum Operation {
+public interface Operation {
 
     /**
-     * 加减乘除
+     * 计算
+     *
+     * @param x 第一个参数
+     * @param y 第二个参数
+     * @return Double类型结果
      */
-    PLUS {
-        @Override
-        public double apply(double x, double y) {
-            return x + y;
-        }
-    },
+    double apply(double x, double y);
 
-    MINUS {
-        @Override
-        public double apply(double x, double y) {
-            return x - y;
-        }
-    },
-
-    TIMES {
-        @Override
-        public double apply(double x, double y) {
-            return x * y;
-        }
-    },
-
-    DIVIDE {
-        @Override
-        public double apply(double x, double y) {
-            return x / y;
-        }
-    };
-
-    public abstract double apply(double x, double y);
 
 }
